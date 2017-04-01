@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>Tesla Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+    
+    <!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <!-- jQuery  -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/wow.min.js"</script>
+    <script src="js/index.js"</script>
+    
+    <!-- Analytics -->
+
+</head>
+<body>
+<header>
+	<nav class="top_bar">
+		<h1 class="logo"><span>Tesla Logo</span></h1>
+		<a class="btn btn_top" href="#" id="more">Specs</a>
+	</nav>
+</header>
+
+<!-- <div class="more_info_wrap"> -->
+	<div class="more_info">
+		<div class="close_btn"></div>
+		<div class="info_wrap">
+			<h1 class="logo2"><span>Tesla Logo</span></h1>
+			<ul class="title clearfix">
+				<li><p>This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more.</p></li>
+		
+				<li><p>This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more.</p></li>
+		
+				<li><p>This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more. This will be lots of awesome content and then some more.</p></li>
+			</ul>
+		</div>
+	</div>
+<!-- </div> -->
+
+<section class="clearfix">
+<div class="wrap">
+	<div class="container">
+		<div class="twelve columns">
+			<h3 class="subtitle">Tesla</h3>
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+			<h1 class="title">Model S</h1>
+			</div>
+			<div class="background_text_wrap">
+				<div class="background_text"></div>
+			</div>
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.7s">
+			<div class="car_wrap">
+				<div class="car"></div>
+			</div>
+			</div>
+			<div class="lines_wrap">
+				<div class="lines"></div>
+			</div>
+		</div>
+		
+		<div class="twelve columns stats">
+			<div class="three columns">
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.18s">
+				<h2>346</h2>
+				<br>
+				<h3>Range (Miles)</h3>
+			</div>
+			</div>
+			<div class="three columns">
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.28s">
+				<h2>259</h2>
+				<br>
+				<h3>Power (HP)</h3>
+			</div>
+			</div>
+			<div class="three columns">
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.38s">
+				<h2>4.2<span>s</span></h2>
+				<br>
+				<h3>0-60 (MPH)</h3>
+			</div>
+			</div>
+			<div class="three columns">
+			<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.48s">
+				<h2>155</h2>
+				<br>
+				<h3>Top Speed (MPH)</h3>
+			</div>
+			</div>
+		</div>
+
+	</div><!--end container-->
+</div><!--end wrap-->
+</section>
+
+<footer>
+	<div class="footer_wrap">
+		<div class="price">
+		<div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+			<h3>Starting From: <span>£32,000</span></h3>
+		</div>
+		</div>
+		<div class="buttons">
+			<a class="btn btn_secondary" href="#">Enquire today</a>
+<!-- 			<a class="btn" href="#" id="more">Find out more</a> -->
+		</div>
+	</div>
+</div>
+</footer>
+
+<script>
+	$(document).ready(function() {
+	    $("#more").click(function() {
+	        $(".more_info").fadeIn(400);
+	    });
+	    
+	    $('.close_btn').on('click', function(){
+			$(this).parent().fadeOut( function(){
+			});
+		});	
+
+/*
+	    $(".close_btn").click(function() {
+  			$(".more_info_wrap").removeClass("close");
+		})
+*/
+
+/*
+		$(document).mouseup(function (e) {
+    	
+    	var container = $(".more_info_wrap");
+
+    	if (!container.is(e.target) // if the target of the click isn't the container...
+        	&& container.has(e.target).length === 0) // ... nor a descendant of the container
+    	{
+        
+        container.hide("right");
+    	
+    	}
+		
+		});
+*/
+	});
+</script>
+
+<script>
+	new WOW().init();
+</script>
+
+</body>
+
+</html>
